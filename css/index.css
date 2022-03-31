@@ -1,0 +1,660 @@
+:root{
+    font-size: 74.88px;
+}
+img{
+    width: 100%;
+}
+#box{
+    position: relative;
+    height:100vh;
+    overflow: hidden;
+}
+main,main>div,.header{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    /* overflow: hidden; */
+    height: auto;
+}
+.header{
+    background-image: url(../image/58672a7a969e9c682836e93d3a9f36c2_8216746459286921539.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 74.88px;
+}
+.header .logo{
+    position: absolute;
+    width: 1.68rem;
+    height: 1.33rem;
+    left: 0.426rem;
+    top: 0.363rem;
+    cursor: pointer;
+    font-size: 74.88px;
+}
+.download{
+    position: absolute;
+    left:58%;
+    top: 0.613rem;
+    /* bottom: 8.2rem; */
+    width: 0.6rem;
+    /* height: 50rem; */
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.download a img{
+   width: 100%;
+   height: 100%;
+}
+.official{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 119px;
+    height: 62px;
+}
+.official img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.play{
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    width: 75.73px;
+    height: 75.73px;
+    cursor:pointer;
+}
+.play img{
+    width: 100%;
+    height: 100%;
+}
+.play img:hover{
+    transform: scale(1.1);
+    transition: all 100ms ease 0ms;
+}
+.video-box{
+    z-index: 24;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.52rem 0 0 -4.48rem;
+    width: 8.96rem;
+    height: 5.04rem;
+}
+.video{
+    z-index: 23;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.video-box video{
+    width: 100%;
+    height: 100%;
+}
+.remind-box{
+    width: 100%;
+    height: 100%;
+}
+.remind-logo{
+    position: absolute;
+    width: 1rem;
+    height: 1.3rem;
+    left: 0.497rem;
+    bottom:0.5rem ;
+    cursor: pointer;
+}
+.remind-bg{
+    z-index: 21;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.remind-content{
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin:-3.21rem 0 0 -4.27rem;
+    background-image: url(../image/11e7a079077d5523f87ec34bf65a71fa_7483736760903107786.jpg);
+    background-size: 100%;
+    width: 8.54rem;
+    height: 6.42rem;
+}
+.remind-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -0.57rem;
+    width: 0.57rem;
+    height: 0.57rem;
+    cursor: pointer;
+}
+.scroll{
+    z-index: 24;
+    position: absolute;
+    left: 50%;
+    bottom: -0.8rem;
+    width: 0.47rem;
+    height: 1.73rem;
+    animation: scroll 2.5s infinite;
+}
+@keyframes scroll {
+    50% {
+        bottom:-0.4rem;
+    }
+}
+/* 左侧导航栏 */
+#sectionIndex{
+    position: fixed;
+    top: 0;
+    left: 150px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+#sectionIndex div{
+    width: 1px;
+    height: 110px;
+    background-color: #fff;
+}
+#sectionIndex li{
+    list-style-type: none;
+    width: 40.39px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all .4s;
+    cursor: pointer;
+}
+#sectionIndex li img{
+    width: 100%;
+}
+.main{
+    position: relative;
+}
+/* 三界路食祭样式 */
+.main>div:first-of-type{
+    background-image: url(../image/6afdbd67759e54f9e64814905afa7d0a_8216746459286921539.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* 角色情报样式 */
+.main>div:nth-of-type(2){
+    background-image: url(../image/6d77e4f19f0b44b16b7da10b9828ecb2_3267064271441046590.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.role-wrap{
+    position: relative;
+    width: 1217px;
+    height: 100%;
+    margin: auto;
+}
+.role-wrap>li:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/role1.png);
+    background-size: 100%;
+    background-position: 10px 11px;
+    background-repeat: no-repeat;
+    /* display: none; */
+}
+.cv{
+    position: absolute;
+    left: 175px;
+    top: 250px;
+    width: 45px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cv>div{
+    position: relative;
+    height: 48%;
+    cursor: pointer;
+}
+.cv>div>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.cv>div>img:last-child{
+    display: none;
+}
+.role-wrap>li:nth-child(2){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/role2.png);
+    background-size: 100%;
+    background-position: 10px 12.5px;
+    background-repeat: no-repeat;
+    display: none;
+}
+.role-wrap>li:last-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/role3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+.role-video{
+    position: absolute;
+    right: 102px;
+    top: 398px;
+    width: 282px;
+    height: 164px;
+}
+.role-video>img{
+    width: 100%;
+}
+.role-video .play{
+    position:absolute;
+    top: 32px;
+    left: 103px;
+    margin:auto;
+    cursor: pointer;
+}
+.role-list{
+    z-index: 10;
+    position: absolute;
+    top: 586px;
+    right: 102px;
+    width: 282px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.role-list li{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.role-list li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.role-list li img:last-child{
+    display: none;
+}
+/* 右上角样式 */
+.decorate{
+    position: absolute;
+    top: 0;
+    right: 200px;
+    width: 2.3%;
+}
+.decorate img{
+    width: 100%;
+}
+/* 新的怪物样式 */
+.new-monster{
+    background-image: url(../image/b3e203798f96c10456444c478bd6543d_2045447260421457075.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.monster-video{
+    position: absolute;
+    top: 47.5%;
+    left:50%;
+    margin: -297.5px 0 0 -297.5px;
+    width: 595px;
+    height: 595px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.monster-video-box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -297.5px 0 0 -529.5px;
+    width: 1059px;
+    height: 595px;
+}
+.monster-video video{
+    width: 100%;
+}
+.info1{
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    margin-left: -50px;
+    width: 100px;
+    height: 50px;
+    display: none;
+}
+.info2{
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    margin-left: -208.5px;
+    width: 417px;
+}
+.monster1,.monster2{
+    position: absolute;
+    top: 400px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.monster1 img,.monster2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.monster1 img:last-child{
+    display: none;
+}
+.monster1{
+    left: 460px;
+}
+.monster2{
+    left: 1330px;
+}
+/* 更多活动样式 */
+.more-activity{
+    background-image: url("../image/7566133e99558cbba87286aa3ccf21a8_2462288274010546596.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.activity-wrap{
+    position: absolute;
+    top: 47%;
+    left: 53%;
+    margin:-294px 0 0 -528px ;
+    width: 1056px;
+    height: 588px;
+}
+.activity-wrap>div{
+    float: left;
+}
+.activity-title{
+    position: relative;
+    width: 132px;
+    height: 588px;
+    margin-left: 8.4px;
+    cursor: pointer;
+}
+.activity-title img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.activity-content:nth-of-type(4),.activity-content:nth-of-type(6){
+    width: 0;
+}
+.activity-title:nth-of-type(3) img:last-child,.activity-title:nth-of-type(5) img:last-child{
+    display: none;
+}
+.activity-content{
+    width: 555px;
+    height: 476px;
+    margin-top: 48px;
+    transition: all .4s linear;
+}
+.activity-content:nth-of-type(2){
+    background-image: url(../image/activitycontent1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.activity-content:nth-of-type(4){
+    background-image: url(../image/activitycontent2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.activity-content:nth-of-type(6){
+    background-image: url(../image/activitycontent3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 游戏特色样式 */
+.feature{
+    background-image: url("../image/d1f8a10c1f10c43ce840286801b634bd_5902885363410568969.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 89.7222px;
+}
+.feature-wrap{
+    position: absolute;
+    top: 1.59rem;
+    width: 100%;
+    height: 466px;
+    font-size: 89.7222px;
+}
+.feature-wrap div{
+    position: absolute;
+    left: calc(50% - 4.845em);
+    width: 9.69em;
+    height: 5.46em;
+    transition: all .4s;
+    background-size: 100% 100%;
+}
+.feature-wrap div:nth-child(1){
+    background-image: url(../image/first.png);
+}
+.feature-wrap div:nth-child(2){
+    background-image: url(../image/second.png);
+}
+.feature-wrap div:nth-child(3){
+    background-image: url(../image/third.png);
+}
+.feature-wrap div:nth-child(4){
+    background-image: url(../image/fourth.png);
+}
+.feature-wrap div:nth-child(5){
+    background-image: url(../image/fifth.png);
+}
+.feature-wrap div:nth-child(6){
+    background-image: url(../image/sixth.png);
+}
+.swipe1{
+    z-index: 2;
+    transform:  translateX(0) scale(1);
+    opacity: 1;
+}
+.swipe2{
+    z-index: 1;
+    transform:  translateX(3em) scale(0.7);
+    opacity: 1;
+}
+.swipe3{
+    z-index: 0;
+    transform:  translateX(3em) scale(0.4);
+    opacity: 0;
+}
+.swipe4{
+    z-index: 0;
+    transform:  translateX(0) scale(1);
+    opacity: 0;
+}
+.swipe5{
+    z-index: 0;
+    transform:  translateX(-3em) scale(0.4);
+    opacity: 0;
+}
+.swipe6{
+    z-index: 1;
+    transform:  translateX(-3em) scale(0.7);
+    opacity: 1;
+}
+.turn{
+    z-index: 3;
+    position: absolute;
+    left: calc(50% - 6em);
+    top: 4.4rem;
+    width: 12em;
+    height: 0.6em;
+    display: flex;
+    justify-content: space-between;
+}
+.prev,.next{
+    position: relative;
+    width: 40px;
+    height: 55px;
+    cursor: pointer;
+}
+.prev img,.next img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.prev img:nth-child(2),.next img:nth-child(2){
+    display: none;
+}
+.swipe-index{
+    position: absolute;
+    top: 8.5rem;
+    width: 100%;
+    height: 0.19rem;
+    display: flex;
+    justify-content: center;
+}
+.swipe-index li{
+    position: relative;
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-left: 0.1rem;
+}
+.swipe-index li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.swipe-index li img:nth-of-type(2){
+    display: none;
+}
+.swipe-index li:first-child img:nth-of-type(2){
+    display: block;
+}
+.focus{
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    height: 124px;
+    display: flex;
+    justify-content: center;
+}
+.focus div{
+    position: relative;
+    width: 140px;
+    margin: 0 16.8px;
+}
+.focus div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.focus div img:nth-child(2){
+    display: none;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height: 343px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #999;
+}
+.footer-wrap{
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.footer-logo{
+    width: 300px;
+    height: 293px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo span{
+    width: 1px;
+    height: 28px;
+    background-color: #666;
+}
+.en-logo{
+    width: 119px;
+    height: 42px;
+}
+.ch-logo{
+    width: 110px;
+    height: 80px;
+}
+.footer-info{
+    width: 882px;
+    height: 293px;
+    margin-left: 60px;
+}
+.footer-link{
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 28px;
+}
+.footer-link li{
+    margin:0 8px;
+}
+.footer-link a{
+    font-size: 14px;
+    color: #fff;
+}
+.footer-link a:hover{
+    text-decoration:underline;
+}
+.advice-info p{
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+.footer-icon{
+    width: 800px;
+    height: 56px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon a{
+    width: 116px;
+    height: 46px;
+    border: 1px solid #b0b0b0;
+    display: block;
+}
